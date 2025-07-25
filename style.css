@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+#playground {
+  width: 800px;
+  height: 800px;
+  position: relative;
+  border: 2px solid #333;
+  background: #f7f7f7;
+}
+
+.cube {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border: 2px solid black;
+  cursor: grab;
+  transition: outline 0.2s;
+}
+
+.cube.selected {
+  outline: 3px solid orange;
+}
+
+.controls button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  font-size: 16px;
+}
+
+.cube.grouped {
+	outline: 2px dashed orange;
+}
